@@ -13,7 +13,7 @@ header {
 
 nav {
   text-align: center; 
-  font-size: 50px;
+  font-size: 5vw;
 }
 
 a:visited {
@@ -25,8 +25,8 @@ a:visited {
 
 
 #paddle1 {
-  width: 30px;
-  height: 150px;
+  width: 2vw;
+  height: 10vw;
   background-color: white;
   position: relative;
   animation: myfirst 1s linear 0s infinite alternate;
@@ -34,26 +34,26 @@ a:visited {
 
 
 @keyframes myfirst {
-  from   {left: 5px; top:0px;}
-  to  {left: 5px; top:200px;}
+  from   {left: 0.5vw; top:0vw;}
+  to  {left: 0.5vw; top:15vw;}
 }
 
 #paddle2 {
-  width: 30px;
-  height: 150px;
+  width: 2vw;
+  height: 10vw;
   background-color: white;
   position: relative;
   animation: mysecond 1s linear 0s infinite alternate;
 }
 
 @keyframes mysecond {
-  from   {left: 1448px; top:-150px;}
-  to  {left: 1448px; top:50px;}
+  from   {left: 94vw; top:-10vw;}
+  to  {left: 94vw; top:5vw;}
 }
 
 #ball {
-  height: 35px;
-  width: 35px;
+  height: 2vw;
+  width: 2vw;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
@@ -62,8 +62,8 @@ a:visited {
 
 }
 @keyframes mythird {
-  from   {left:35px; top:-210px;}
-  to  {left:1410px; top:-20px}
+  from   {left:2vw; top:-17vw;}
+  to  {left:92.8vw; top:-3vw}
 }
 
 div.absolute {
@@ -77,5 +77,4 @@ div.absolute1 {
   orientation: flip;
   top: 770px;
   left: 100px;
-
 }
