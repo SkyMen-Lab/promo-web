@@ -22,8 +22,6 @@ a:visited {
   text-decoration: none;
 }
 
-
-
 #paddle1 {
   width: 2vw;
   height: 10vw;
@@ -47,9 +45,10 @@ a:visited {
 }
 
 @keyframes mysecond {
-  from   {left: 94vw; top:-10vw;}
-  to  {left: 94vw; top:5vw;}
+  from   {left: 97%; top:-10vw;}
+  to  {left: 97%; top:5vw;}
 }
+
 
 #ball {
   height: 2vw;
@@ -59,11 +58,10 @@ a:visited {
   display: inline-block;
   position: relative;
   animation: mythird 3s linear 0s infinite alternate;
-
 }
 @keyframes mythird {
-  from   {left:2vw; top:-17vw;}
-  to  {left:92.8vw; top:-3vw}
+  from   {left:2%; top:-17vw;}
+  to  {left:95.8%; top:-3vw}
 }
 
 div.absolute {
