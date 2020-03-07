@@ -64,15 +64,28 @@ a:visited {
   to  {left:95.8%; top:-3vw}
 }
 
-div.absolute {
-  position: absolute;
-  top: 770px;
-  right: 100px;
+div.relative {
+  position: relative;
+  width: 98%;
+  height: 16vw;
+  border: 3px solid black;
 
 }
+
+div.absolute {
+  position: absolute;
+  left: 10vw;
+  width: 16vw;
+  height: 16vw;
+  border: 3px solid black;
+
+}
+
 div.absolute1 {
   position: absolute;
-  orientation: flip;
-  top: 770px;
-  left: 100px;
+  right: 10vw;
+  width: 16vw;
+  height: 16vw;
+  border: 3px solid black;
+
 }
