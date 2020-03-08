@@ -1,0 +1,133 @@
+body {
+    border: solid white 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    background-size: 100% 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 2vw;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.header {
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+}
+
+.aside {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+#paddle1 {
+    width: 2vw;
+    height: 10vw;
+    background-color: white;
+    position: relative;
+    animation: myfirst 1s linear 0s infinite alternate;
+  }
+  
+  
+  @keyframes myfirst {
+    from   {left: 0.5vw; top:0vw;}
+    to  {left: 0.5vw; top:15vw;}
+  }
+  
+#paddle2 {
+width: 2vw;
+height: 10vw;
+background-color: white;
+position: relative;
+animation: mysecond 1s linear 0s infinite alternate;
+}
+
+@keyframes mysecond {
+from   {left: 97%; top:-10vw;}
+to  {left: 97%; top:5vw;}
+}
+
+
+#ball {
+height: 2vw;
+width: 2vw;
+background-color: white;
+border-radius: 50%;
+display: inline-block;
+position: relative;
+animation: mythird 3s linear 0s infinite alternate;
+}
+@keyframes mythird {
+from   {left:2%; top:-17vw;}
+to  {left:95.8%; top:-3vw}
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 100%;}
+  .col-2 {width: 100%;}
+  .col-3 {width: 100%;}
+  .col-4 {width: 100%;}
+  .col-5 {width: 100%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 5100%;}
+  .col-8 {width: 100%;}
+  .col-9 {width: 100%;}
+  .col-10 {width: 100%;}
+  .col-11 {width: 100%;}
+  .col-12 {width: 100%;}
+}
