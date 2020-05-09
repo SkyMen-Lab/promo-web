@@ -1,22 +1,30 @@
 body {
-  border: solid white 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  background-size: 100% 100%;
-}
-
+   border: solid white 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: black;
+   background-size: 100% 100%;
+ }
+ 
 header {
   text-align: center;
   padding-top: 0px;
 
 }
 
-
-
 a:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
+}
+
+a span {
+  opacity: 0;
+}
+a:hover span {
+  opacity: 1;
+  color: white;
+  
+
 }
 
 #paddle1 {
@@ -68,6 +76,7 @@ div.relative {
   text-align: center; 
   font-size: 5vw;
 
+
 }
 
 div.absolute {
@@ -83,5 +92,6 @@ div.absolute1 {
   right: 10vw;
   width: 16vw;
   height: 16vw;
+
 
 }

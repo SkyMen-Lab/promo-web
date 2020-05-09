@@ -4,6 +4,23 @@ body {
     background-color: black;
     background-size: 100% 100%;
 }
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a span {
+  opacity: 0;
+}
+a:hover span {
+  opacity: 1;
+  color: white;
+  
+
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -34,6 +51,9 @@ li a:hover {
     content: "";
     clear: both;
     display: table;
+    
+    
+    
 }
 
 [class*="col-"] {
@@ -52,6 +72,8 @@ li a:hover {
     color: white;
     text-align: left;
     font-size: 15px;
+
+
 }
 
 #paddle1 {
