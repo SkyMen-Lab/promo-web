@@ -6,12 +6,10 @@ const ctx = canvas.getContext('2d');
 
 // load sounds
 let hit = new Audio();
-let wall = new Audio();
 let com1Score = new Audio();
 let comScore = new Audio();
 
 hit.src = "sounds/hit.mp3";
-wall.src = "sounds/wall.mp3";
 comScore.src = "sounds/comScore.mp3";
 com1Score.src = "sounds/com1Score.mp3";
 
@@ -128,8 +126,10 @@ function update(){
     ball.y += ball.velocityY;
     
     // computer plays for itself, and we must be able to beat it
+
     // simple AI com
-    com.y += ((ball.y - (com.y + com.height/2)))*0.1;
+    com.y += ((ball.y - (com.y + com.height/3)))*0.5;
+
     // simple AI com1
     com1.y += ((ball.y - (com1.y + com1.height/2)))*0.1;
 
@@ -137,7 +137,6 @@ function update(){
     // when the ball collides with bottom and top walls we inverse the y velocity.
     if(ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height){
         ball.velocityY = -ball.velocityY;
-        wall.play();
     }
     
     // we check if the paddle hit the com1 or the com paddle
